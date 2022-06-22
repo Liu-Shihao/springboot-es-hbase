@@ -1,0 +1,9 @@
+server:
+  port: 8066
+spring:
+  application:
+    name: springboot-es-hbase
+  data:
+    elasticsearch:
+      # 此处注意，程序中使用9300端口连接es，浏览器中使用9200端口
+      cluster-nodes: 47.100.241.202:9300
