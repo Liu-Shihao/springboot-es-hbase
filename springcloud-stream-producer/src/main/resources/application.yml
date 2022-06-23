@@ -1,0 +1,10 @@
+server:
+  port: 8066
+spring:
+  application:
+    name: springboot-es-hbase
+  rabbitmq:
+    addresses: localhost
+    port: 6379
+    username: admin
+    password: admin

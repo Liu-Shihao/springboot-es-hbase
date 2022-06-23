@@ -6,7 +6,6 @@ import com.lsh.repository.MovieRepository;
 import com.lsh.service.EsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
-import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -19,8 +18,9 @@ import java.util.Iterator;
  */
 @Service
 public class EsServiceImpl implements EsService {
-    @Autowired
-    ElasticsearchTemplate elasticsearchTemplate;
+
+//    @Autowired
+//    ElasticsearchTemplate elasticsearchTemplate;
 
     @Autowired
     BookRepository bookRepository;

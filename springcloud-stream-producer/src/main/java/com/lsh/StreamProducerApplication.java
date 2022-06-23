@@ -5,12 +5,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author ：LiuShihao
- * @date ：Created in 2022/6/22 8:56 下午
+ * @date ：Created in 2022/6/23 8:15 下午
  * @desc ：
  */
 @SpringBootApplication
-public class SpringBootEsHbase {
+public class StreamProducerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootEsHbase.class,args);
+        SpringApplication.run(StreamProducerApplication.class,args);
     }
 }

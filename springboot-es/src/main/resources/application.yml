@@ -1,0 +1,9 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: springboot-es
+#  data:
+#    elasticsearch:
+#      # 此处注意，程序中使用9300端口连接es，浏览器中使用9200端口  高版本已弃用  使用RestHighLevelClient
+#      cluster-nodes: 47.100.241.202:9300

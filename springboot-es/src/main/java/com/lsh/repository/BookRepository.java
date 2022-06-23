@@ -12,6 +12,6 @@ import java.util.ArrayList;
  */
 public interface BookRepository extends ElasticsearchRepository<Book,String> {
 
-    ArrayList<Book> findByBookContentOrBookTitleOrBookId (String content, String title, String id);
-    Book findByBookId (String bookId);
+    ArrayList<Book> findByBookContentOrBookTitleOrBookId(String content, String title, String id);
+    Book findByBookId(String bookId);
 }

@@ -43,3 +43,11 @@ docker pull mobz/elasticsearch-head:5
 # 创建es-head容器
 docker run -di --name head -p 9100:9100 mobz/elasticsearch-head:5
 ```
+
+# SpringCloud Stream RabbitMQ
+1. 引入SpringCloud
+2. 引入SpringCloud Stream相关依赖
+3. 定义绑定接口: 消息生产者(Output…Binding) 、消息消费者(Input…Binding)
+4. @EnableBinding 在对应类上进行定义
+5. @StreamListener 在对应方法上创建监听用来消费消息
+6. 调用output的send()方法生产消息
