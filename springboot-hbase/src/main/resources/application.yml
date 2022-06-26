@@ -9,6 +9,9 @@ hbase:
   config:
     hbase.zookeeper.quorum: localhost
     hbase.zookeeper.port: 2181
+    # hbase.client.ipc.pool.type 指定线程池类型  Reusable, ThreadLocal, RoundRobin
+    # hbase.client.ipc.pool.size指定线程池大小（默认是1）
+    hbase.client.ipc.pool.size: 10
 #    hbase.zookeeper.znode: /hbase
 #    hbase.client.keyvalue.maxsize: 1572864000
 
