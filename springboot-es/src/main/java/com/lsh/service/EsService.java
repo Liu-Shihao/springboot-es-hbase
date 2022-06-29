@@ -1,8 +1,11 @@
 package com.lsh.service;
 
+import com.lsh.dto.SearchDataDto;
 import com.lsh.entity.Book;
+import com.lsh.entity.WarnData;
+import org.springframework.data.domain.Page;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author ：LiuShihao
@@ -12,7 +15,11 @@ import java.util.ArrayList;
 public interface EsService {
     void insertBook(Book book);
 
-    ArrayList<Book> findBooks();
+    List<Book> findBooks();
 
     Book searchBooks(String bookId);
+
+    Page<WarnData> find(SearchDataDto searchDataDto);
+
+    void insertWarnData(SearchDataDto searchDataDto);
 }
